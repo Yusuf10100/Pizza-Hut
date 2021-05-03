@@ -11,7 +11,7 @@ class Header extends ChangeNotifier {
         children: [
           IconButton(icon: Icon(FontAwesomeIcons.userAlt), onPressed: () {}),
           Text(
-            'Search',
+            'Location',
             style: TextStyle(
                 color: Colors.grey.shade600,
                 fontSize: 12,
