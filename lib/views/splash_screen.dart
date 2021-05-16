@@ -5,6 +5,8 @@ import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:pizza_hut/views/home_page.dart';
 
+import 'login.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -18,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
         () => Navigator.pushReplacement(
             context,
             PageTransition(
-                child: HomePage(), type: PageTransitionType.leftToRight)));
+                child: Login(), type: PageTransitionType.leftToRight)));
     super.initState();
   }
 

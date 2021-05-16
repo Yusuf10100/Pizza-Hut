@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:pizza_hut/helpers/footer.dart';
 import 'package:pizza_hut/helpers/header.dart';
 import 'package:pizza_hut/helpers/middle.dart';
+import 'package:pizza_hut/providers/authentication.dart';
+import 'package:pizza_hut/providers/calculations.dart';
 import 'package:pizza_hut/services/manage_data.dart';
 import 'package:pizza_hut/views/splash_screen.dart';
 import 'package:provider/provider.dart';
@@ -23,6 +25,8 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: MiddleHelper()),
         ChangeNotifierProvider.value(value: ManageData()),
         ChangeNotifierProvider.value(value: Footer()),
+        ChangeNotifierProvider.value(value: Authentication()),
+        ChangeNotifierProvider.value(value: Calculations()),
       ],
       child: MaterialApp(
         title: 'Pizza Hut',
