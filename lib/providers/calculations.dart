@@ -49,18 +49,27 @@ class Calculations with ChangeNotifier {
 
   selectedSmallSize() {
     smallTapped = true;
+        mediumTapped = false;
+    largeTapped = false;
+
     size = 'S';
     notifyListeners();
   }
 
   selectedMediumSize() {
     mediumTapped = true;
+        largeTapped = false;
+            smallTapped = false;
+
+
     size = 'M';
     notifyListeners();
   }
 
   selectedLargeSize() {
     largeTapped = true;
+    smallTapped = false;
+        mediumTapped = false;
     size = 'S';
     notifyListeners();
   }

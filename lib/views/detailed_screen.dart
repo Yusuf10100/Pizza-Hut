@@ -22,7 +22,7 @@ class _DetailedScreenState extends State<DetailedScreen> {
   int cheeseValue = 0;
   int beaconValue = 0;
   int onionValue = 0;
-  int totalItems = 0;
+  dynamic cartData = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -368,20 +368,18 @@ class _DetailedScreenState extends State<DetailedScreen> {
         GestureDetector(
           onTap: () {
             Provider.of<Calculations>(context, listen: false)
-                      .addToCart(context, {
-                        'image': widget.queryDocumentSnapshot['image'],
-                        'name': widget.queryDocumentSnapshot['name'],
-                        'price': widget.queryDocumentSnapshot['price'],
-                        'onion': Provider.of<Calculations>(context, listen: false)
-                                  .getOnionValue,
-                        'beacon': Provider.of<Calculations>(context, listen: false)
-                                  .getBeaconValue,
-                        'cheese': Provider.of<Calculations>(context, listen: false)
-                                  .getCheeseValue,
-                        'size': Provider.of<Calculations>(context, listen: false)
-                                  .getSize,
-
-                      });
+                .addToCart(context, {
+              'image': widget.queryDocumentSnapshot['image'],
+              'name': widget.queryDocumentSnapshot['name'],
+              'price': widget.queryDocumentSnapshot['price'],
+              'onion': Provider.of<Calculations>(context, listen: false)
+                  .getOnionValue,
+              'beacon': Provider.of<Calculations>(context, listen: false)
+                  .getBeaconValue,
+              'cheese': Provider.of<Calculations>(context, listen: false)
+                  .getCheeseValue,
+              'size': Provider.of<Calculations>(context, listen: false).getSize,
+            });
           },
           child: Container(
             width: 250,
@@ -411,12 +409,12 @@ class _DetailedScreenState extends State<DetailedScreen> {
                 color: Colors.black,
               ),
             ),
-            Positioned(
-                left: 35,
-                child: CircleAvatar(
-                  radius: 10,
-                  child: Text('$totalItems'),
-                ))
+            // Positioned(
+            //     left: 35,
+            //     child: CircleAvatar(
+            //       radius: 10,
+            //       child: Text(Provider.of<Calculations>(context, listen: false).cartData.toString()),
+            //     ))
           ],
         )
       ],

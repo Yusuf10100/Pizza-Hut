@@ -93,7 +93,7 @@ class _CartScreenState extends State<CartScreen> {
     );
   }
 
-  Widget shippingDetails(BuildContextcotext) {
+  Widget shippingDetails(buildcontext) {
     return Container(
       decoration: BoxDecoration(boxShadow: [
         BoxShadow(color: Colors.grey.shade500, blurRadius: 5, spreadRadius: 3)
