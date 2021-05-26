@@ -22,9 +22,7 @@ class Authentication extends ChangeNotifier {
 
       notifyListeners();
     } on FirebaseException catch (e) {
-      
-          errorMessage = e.message;
-          
+      errorMessage = e.message;
     }
   }
 
@@ -41,9 +39,7 @@ class Authentication extends ChangeNotifier {
 
       notifyListeners();
     } on FirebaseException catch (e) {
-      
-          errorMessage = e.message;
-          
+      errorMessage = e.message;
     }
   }
 }
