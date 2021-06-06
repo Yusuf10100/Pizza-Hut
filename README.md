@@ -1,16 +1,9 @@
 # pizza_hut
 
-A new Flutter project.
+A Flutter UI App for Pizza Shop.
 
-## Getting Started
+## Demo
 
-This project is a starting point for a Flutter application.
+<img src="https://user-images.githubusercontent.com/69325037/120928745-3f32be80-c6e6-11eb-84c3-5b238ff4cbe9.jpeg" width="370"/> $~$ <img src="https://user-images.githubusercontent.com/69325037/120928737-393cdd80-c6e6-11eb-872a-ac04c6775d7b.jpeg" width="370"/> $~$<img src="https://user-images.githubusercontent.com/69325037/120928728-2d511b80-c6e6-11eb-8180-cbe67d43e036.jpeg" width="370"/> $~$<img src="https://user-images.githubusercontent.com/69325037/120928723-25917700-c6e6-11eb-98e2-cd4063af4f29.jpeg" width="370"/>$~$ <img src="https://user-images.githubusercontent.com/69325037/120928715-1dd1d280-c6e6-11eb-9d32-a92822e1a11d.jpeg" width="370"/> 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
