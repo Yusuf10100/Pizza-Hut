@@ -1,4 +1,4 @@
-# pizza_hut
+# pizza_hut_UI
 
 A Flutter UI App for Pizza Shop.
 
